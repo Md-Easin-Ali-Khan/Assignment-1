@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Assignment-1</title>
+    <style>
+        * {
+    font-family: IBM Plex Sans;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===================COMMON CSS================= */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ================================================
+HEADER AREA
+================================================ */
+
+.header_area {
+    background: rgba(15, 15, 15, 0.05);
+    height: 75vh;
+    margin: 40px 0px;
+}
+
+.nav_bar {
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_area h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+}
+
+.menu_area ul {
+    display: flex;
+}
+
+.menu_area ul li {
+    list-style: none;
+    margin: 0 48px;
+}
+
+.menu_area ul li a {
+    text-decoration: none;
+    color: #0F0F0F;
+    opacity: 70%;
+}
+
+.buy_area button {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    width: 156px;
+    height: 52px;
+    padding: 13px 36px;
+    border-radius: 99px;
+    border: 1px solid #0F0F0F;
+    background: #D8FB78;
+
+
+
+}
+
+/* ================================================
+HEADER AREA
+================================================ */
+
+.banner_area {
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_banner {
+    width: 550px
+}
+
+.left_banner h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.left_banner p {
+    color: #0F0F0F;
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+
+}
+
+.left_banner button {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    width: 192px;
+    height: 52px;
+    line-height: 26px;
+    padding: 13px 36px;
+    border-radius: 99px;
+    border: 1px solid #0F0F0F;
+    background: #D8FB78;
+}
+
+.right_banner img {
+    width: 450px
+}
+
+/* ================================================
+PRODUCTS AREA
+================================================ */
+.products_area {
+    background: rgba(15, 15, 15, 0.05);
+    margin: 50px 0px;
+}
+
+.best_products {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 827px;
+    height: 110px;
+}
+
+.best_products p {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 70%;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.product_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 5px;
+    width: 360px;
+}
+
+.item_image {
+    background: rgba(15, 15, 15, 0.05);
+}
+
+.item_content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.4px;
+    text-align: left;
+}
+
+.item_content p {
+    font-size: 16px;
+    opacity: 70%;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+}
+
+.item_content .btn_1 {
+    background-color: #D8FB78;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+    text-align: center;
+    border: none;
+    margin: 2% 2%;
+    width: 96%;
+    padding: 5% 0;
+    border-radius: 32px;
+}
+
+.item_content .btn_2 {
+    border: none;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 70%;
+    line-height: 23.4px;
+    padding: 7px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.item_content .fa-solid {
+    color: rgba(255, 88, 47, 1);
+    font-size: 26px;
+    width: 27%;
+}
+
+.item_content .fa-regular {
+    color: rgba(15, 15, 15, 0.8);
+    font-size: 26px;
+    width: 18.01px;
+    height: 16.01px;
+    top: 3.99px;
+    left: 2.99px;
+}
+
+/* ================================================
+FOOTER AREA
+================================================ */
+
+.footer_area {
+    background: rgba(255, 255, 255, 1);
+    margin: 100px 0;
+}
+
+.inner_footer h1 {
+    color: rgba(15, 15, 15, 1);
+    font-weight: 700;
+    line-height: 52px;
+    width: 114px;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.mine_menu {
+    margin: 40px 0;
+}
+
+.mine_menu ul {
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    gap: 48px;
+    opacity: 0.7px;
+}
+
+.mine_menu ul li {
+    list-style: none;
+}
+
+.mine_menu ul li a {
+    color: rgba(15, 15, 15, 1);
+    text-decoration: none;
+}
+
+.social_area {
+    margin: 60px 0;
+}
+
+.social_area ul {
+    height: 21px;
+    gap: 18px;
+    opacity: 0.7px;
+    display: flex;
+    justify-content: center;
+}
+
+.social_area ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social_area ul li a {
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.social_area ul li a .fa-brands {
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    padding: 7px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.social_area ul li a .fa-facebook-f {
+    background: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
+
+
+}
+
+.social_area ul li a .fa-x-twitter {
+    background: rgba(15, 15, 15, 1);
+}
+
+.social_area ul li a .fa-linkedin-in {
+    background: linear-gradient(135deg, #2489BE 14.64%, #0575B3 85.36%);
+}
+
+.social_area ul li a .fa-youtube {
+    background: rgba(255, 0, 0, 1);
+
+}
+.h_rull{
+    background: rgb(197, 195, 195);
+    width: 1000px;
+    height: 2px;
+    margin: 0 auto;
+}
+.contact_area {
+    padding-top: 40px;
+    width: 683px;
+    margin: 0 auto;
+}
+
+.inner_contact_area {
+    background: rgba(242, 244, 246, 1);
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_area input {
+    background: rgba(165, 165, 165, 1);
+    border: none;
+    width: 436px;
+    height: 21px;
+}
+
+.btn_area button{
+    background: rgba(15, 15, 15, 1);
+    font-size: 15px;
+    font-weight: 700;
+    width: 140px;
+    height: 50px;
+    border-radius: 99px;
+    border: 1px solid #0F0F0F;
+    background: #D8FB78;
+
+
+}
+    </style>
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="inner_header_area container">
+            <nav class="nav_bar">
+                <div class="logo_area">
+                    <h1>Nerdy</h1>
+                </div>
+                <div class="menu_area">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="buy_area">
+                    <button>Buy Now</button>
+                </div>
+            </nav>
+            <div class="banner_area">
+                <div class="left_banner">
+                    <h2>Designed to <br> combine style and functionality.</h2>
+                    <p>Unlock your potential with Phitron's Online Judge, a dynamic platform for honing your coding
+                        skills through a diverse range of challenges for all experience levels.</p>
+                    <button>Explore Deal</button>
+                </div>
+                <div class="right_banner">
+                    <img src="images/Rectangle 17854.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="products_area">
+        <div class="inner_products container">
+            <div class="best_products">
+                <h1>Best Selling Products</h1>
+                <p>Unlock your potential with Phitron's Online Judge, a dynamic platform for honing your coding skills
+                    through a diverse range of challenges for all experience levels.</p>
+            </div>
+            <div class="product_items">
+                <div class="item">
+                    <div class="item_image">
+                        <img src="images/model-demonstrating-winter-cloths 1.png" alt="">
+                    </div>
+                    <div class="item_content">
+                        <h2>Balenciaga Floral-Print Silk Shirt</h2>
+                        <p>$1644.00</p>
+                        <button class="btn_1">Buy Now</button>
+                        <button class="btn_2">Add to cart</button>
+                        <a href=""><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_image">
+                        <img src="images/model-demonstrating-winter-cloths 1.png" alt="">
+                    </div>
+                    <div class="item_content">
+                        <h2>Balenciaga Floral-Print Silk Shirt</h2>
+                        <p>$1644.00</p>
+                        <button class="btn_1">Buy Now</button>
+                        <button class="btn_2">Add to cart</button>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_image">
+                        <img src="images/model-demonstrating-winter-cloths 1.png" alt="">
+                    </div>
+                    <div class="item_content">
+                        <h2>Balenciaga Floral-Print Silk Shirt</h2>
+                        <p>$1644.00</p>
+                        <button class="btn_1">Buy Now</button>
+                        <button class="btn_2">Add to cart</button>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer_area">
+        <div class="inner_footer container">
+            <h1>Nerdy</h1>
+            <div class="mine_menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social_area">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="h_rull"></div>
+            <div class="contact_area">
+                <div class="inner_contact_area">
+                    <div class="input_area">
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="btn_area">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
